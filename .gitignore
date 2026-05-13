@@ -21,4 +21,11 @@ dist-ssr
 *.ntvs*
 *.njsproj
 *.sln
+release
 *.sw?
+# Created by https://www.toptal.com/developers/gitignore/api/electron
+# Edit at https://www.toptal.com/developers/gitignore?templates=electron
+
+#!! ERROR: electron is undefined. Use list command to see defined gitignore types !!#
+
+# End of https://www.toptal.com/developers/gitignore/api/electron
