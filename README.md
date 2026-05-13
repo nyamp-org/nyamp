@@ -69,7 +69,7 @@ This is a group project. If you're reading this you probably know who we are alr
 |--------|--------|
 | xevrion | [@xevrion](https://github.com/xevrion) |
 | Arman | [@kaihere14](https://github.com/kaihere14) |
-| Chish | [@ChishPKMN](https://github.com/ChishPKMN) |
+| Chish | [@chishxd](https://github.com/chishxd) |
 | Quantinium | [@quantinium3](https://github.com/quantinium3) |
 
 ## License
