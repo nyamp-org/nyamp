@@ -26,6 +26,5 @@ release
 # Created by https://www.toptal.com/developers/gitignore/api/electron
 # Edit at https://www.toptal.com/developers/gitignore?templates=electron
 
-#!! ERROR: electron is undefined. Use list command to see defined gitignore types !!#
+dist-electron
 
-# End of https://www.toptal.com/developers/gitignore/api/electron
