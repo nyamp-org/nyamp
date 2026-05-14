@@ -1,7 +1,9 @@
 import { app, BrowserWindow } from 'electron'
-import { registerHandlers } from './ipc/index'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
+import { registerHandlers } from './ipc'
+import { migrate } from "drizzle-orm/better-sqlite3/migrator"
+import { db } from './db'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -64,6 +66,13 @@ app.on('activate', () => {
   }
 })
 
-registerHandlers()
 
-app.whenReady().then(createWindow)
+function autoMigrate() {
+  migrate(db, { migrationsFolder: path.join(__dirname, '../drizzle') })
+}
+
+app.whenReady().then(() => {
+  registerHandlers()
+  autoMigrate()
+  createWindow()
+})
